@@ -8,7 +8,7 @@ namespace CarRentalCompany
         {
             int choice = 0;
             bool validInput = false;
-
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n====== MENU ======\n");
             Console.WriteLine("1. Choose Vehicle");
             Console.WriteLine("2. Rental Period");
@@ -16,18 +16,23 @@ namespace CarRentalCompany
             Console.WriteLine("\n4. Exit\n");
 
             Console.WriteLine("Your input: ");
-            string inputValue = Console.ReadLine();
-
-            if (int.TryParse(inputValue, out choice) && choice < 5 && choice > 0)
+            
+            do
             {
-                validInput = true;
-            }
-            else
-            {
-                validInput = false;
-                Console.WriteLine("There are only 4 choices.");
-            }
-
+                Console.ResetColor();
+                string inputValue = Console.ReadLine();
+                if (int.TryParse(inputValue, out choice) && choice < 5 && choice > 0)
+                {
+                    validInput = true;
+                    break;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    validInput = false;
+                    Console.WriteLine("There are only 4 choices.");
+                }
+            } while (true);
             switch (choice)
             {
                 case 1:
