@@ -6,6 +6,7 @@ namespace CarRentalCompany.Domain
 {
     class Customer
     {
+
         string Name;
         bool DrivingLicense;
         bool Income;
@@ -36,5 +37,6 @@ namespace CarRentalCompany.Domain
 
 
         }
+
     }
 }
