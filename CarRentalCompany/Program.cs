@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CarRentalCompany.Domain;
+using System;
+
 
 namespace CarRentalCompany
 {
@@ -6,6 +8,7 @@ namespace CarRentalCompany
     {
         static void Main(string[] args)
         {
+            Customer customer = new Customer();
             int choice = 0;
             bool validInput = false;
             Console.ForegroundColor = ConsoleColor.Green;
@@ -51,6 +54,8 @@ namespace CarRentalCompany
                     Environment.Exit(0);
                     break;
             }
+            customer.CheckifEligible();
+
             Console.ReadLine();
 
 
