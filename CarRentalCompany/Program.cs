@@ -19,7 +19,7 @@ namespace CarRentalCompany
             Console.WriteLine("\n4. Exit\n");
 
             Console.WriteLine("Your input: ");
-            
+
             do
             {
                 Console.ResetColor();
@@ -58,7 +58,15 @@ namespace CarRentalCompany
 
             Console.ReadLine();
 
-
+            //Vehicle myVehicle = new Vehicle("Tesla", "ABC123", "Car", true);
+            //myVehicle.PrintVehicleData();
+            //Car myCar = new Car("Volvo", "LOL321", "Car", false, "Sedan");
+            //myCar.PrintVehicleData();
+            //Motorcycle myMotorcyle = new Motorcycle("Honda", "WOW321", "Motorcycle", false, "Cruiser");
+            //myMotorcyle.PrintVehicleData();
+            //Truck myTruck = new Truck("Mercedes-Benz Vito", "OPS111", "Truck", false, "Cargo Van", 6);
+            //myTruck.PrintVehicleData();
+            //Console.ReadLine();
         }
     }
 }
