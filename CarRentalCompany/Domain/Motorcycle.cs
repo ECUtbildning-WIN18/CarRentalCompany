@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CarRentalCompany.Domain
 {
-    class Motorcycle
+    class MotorCycle
     {
     }
 }

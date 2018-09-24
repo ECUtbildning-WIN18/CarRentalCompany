@@ -4,8 +4,12 @@ using System;
 
 namespace CarRentalCompany
 {
+
+    public enum VehicleCategory { car, Motorcycle, Truck };
+
     class Program
     {
+
         static void Main(string[] args)
         {
             Customer customer = new Customer();
@@ -19,7 +23,7 @@ namespace CarRentalCompany
             Console.WriteLine("\n4. Exit\n");
 
             Console.WriteLine("Your input: ");
-            
+
             do
             {
                 Console.ResetColor();
@@ -56,9 +60,10 @@ namespace CarRentalCompany
             }
             customer.CheckifEligible();
 
-            Console.ReadLine();
+            //Vehicle myVehicle = new Vehicle("Tesla", "ABC123", "Car", true);
+            //myVehicle.PrintVehicleData();
 
-
+            //Console.ReadLine();
         }
     }
 }
