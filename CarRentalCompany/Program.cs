@@ -4,8 +4,12 @@ using System;
 
 namespace CarRentalCompany
 {
+
+    public enum VehicleCategory { car, Motorcycle, Truck };
+
     class Program
     {
+
         static void Main(string[] args)
         {
             Customer customer = new Customer();
@@ -66,6 +70,7 @@ namespace CarRentalCompany
             //myMotorcyle.PrintVehicleData();
             //Truck myTruck = new Truck("Mercedes-Benz Vito", "OPS111", "Truck", false, "Cargo Van", 6);
             //myTruck.PrintVehicleData();
+
             //Console.ReadLine();
         }
     }
