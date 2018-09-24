@@ -12,11 +12,11 @@ namespace CarRentalCompany.Domain
         public bool IsRented { get; protected set; } = false;
 
         public Vehicle(
-            string model,
-            string registrationNumber,
-            string vehicleCategory,
-            bool isRented
-            )
+           string model,
+           string registrationNumber,
+           string vehicleCategory,
+           bool isRented
+           )
         {
             Model = model;
             RegistrationNumber = registrationNumber;
@@ -24,12 +24,13 @@ namespace CarRentalCompany.Domain
             IsRented = isRented;
         }
 
-        public void PrintVehicleData()
+        public virtual void PrintVehicleData()
         {
             Console.WriteLine($"Vehicle is of category: {VehicleCategory}");
             Console.WriteLine($"Vehicle is of model: {Model}");
             Console.WriteLine($"Vehicle has registration number: {RegistrationNumber}");
-            Console.WriteLine($"Vehicle is {((IsRented) ?  "not avalible" : "avalible" )}");
+            Console.WriteLine($"Vehicle is {((IsRented) ? "not avalible" : "avalible")}");
         }
-    } 
+    }
 }
+
