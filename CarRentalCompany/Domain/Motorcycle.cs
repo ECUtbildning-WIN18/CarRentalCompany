@@ -9,16 +9,17 @@ namespace CarRentalCompany.Domain
         string TypeOfMotorcycle; // Cruiser, Scooters, Chopper
         public string DriversEligibilityNeeded { get; } = "A";
 
-        public Motorcycle(string model, string registrationNumber, string vehicleCategory, bool isRented, string typeOfMotorcycle) 
-            :base(model, registrationNumber, vehicleCategory, isRented)
+        public Motorcycle(string brand, string model, string registrationNumber, string vehicleCategory, bool isRented, string typeOfMotorcycle) 
+            :base(brand, model, registrationNumber, vehicleCategory, isRented)
         {
             TypeOfMotorcycle = typeOfMotorcycle;
         }
 
         public override void PrintVehicleData()
         {
-            Console.WriteLine($"The motorcycle is a: {TypeOfMotorcycle}");
+            Console.WriteLine($"The motorcycle is of brand: {Brand}");
             Console.WriteLine($"The motorcycle is of model: {Model}");
+            Console.WriteLine($"The motorcycle is a: {TypeOfMotorcycle}");
             Console.WriteLine($"The motorcycle has registration number: {RegistrationNumber}");
             Console.WriteLine($"The motorcycle is {((IsRented) ? "not avalible" : "avalible")}");
         }

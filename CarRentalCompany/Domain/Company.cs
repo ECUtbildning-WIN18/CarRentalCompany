@@ -6,5 +6,15 @@ namespace CarRentalCompany.Domain
 {
     class Company
     {
+        public string CompanyName { get; } = "Lambda Car Rental";
+        public Car[] Cars { get; }
+
+        public Company()
+        {
+            Cars = new Car[] {
+
+            };
+        }
+
     }
 }
