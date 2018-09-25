@@ -9,9 +9,9 @@ namespace CarRentalCompany
 
     class Program
     {
-
         static void Main(string[] args)
         {
+
             GetMainMenu();
 
             Customer customer = new Customer();
@@ -44,8 +44,6 @@ namespace CarRentalCompany
             Console.WriteLine("2. Trucks");
             Console.WriteLine("3. Motorcycles");
             Console.WriteLine("\n4. Exit\n");
-
-            Console.WriteLine("Your input: ");
 
             do
             {
@@ -81,6 +79,7 @@ namespace CarRentalCompany
                     Environment.Exit(0);
                     break;
             }
+
         }
     }
 }
