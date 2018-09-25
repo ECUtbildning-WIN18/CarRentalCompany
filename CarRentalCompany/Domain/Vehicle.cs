@@ -20,6 +20,7 @@ namespace CarRentalCompany.Domain
            bool isRented
            )
         {
+            Brand = brand;
             Model = model;
             RegistrationNumber = registrationNumber;
             VehicleCategory = vehicleCategory;
