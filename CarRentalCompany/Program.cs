@@ -12,9 +12,10 @@ namespace CarRentalCompany
 
         static void Main(string[] args)
         {
+            GetMainMenu();
+
             Customer customer = new Customer();
 
-            
             customer.CheckifEligible();
 
             Console.ReadLine();
@@ -34,13 +35,14 @@ namespace CarRentalCompany
 
         public static void GetMainMenu()
         {
+            Console.Clear();
             int choice = 0;
             bool validInput;
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\n====== MENU ======\n");
-            Console.WriteLine("1. Choose Vehicle");
-            Console.WriteLine("2. Rental Period");
-            Console.WriteLine("3. Check Price range");
+            Console.WriteLine("1. Cars");
+            Console.WriteLine("2. Trucks");
+            Console.WriteLine("3. Motorcycles");
             Console.WriteLine("\n4. Exit\n");
 
             Console.WriteLine("Your input: ");
@@ -64,16 +66,15 @@ namespace CarRentalCompany
             switch (choice)
             {
                 case 1:
-                    //Console.WriteLine("");
-                    //GetVehicleCategoryMenu();
+                    Console.WriteLine(""); //Put the Method for printing the car array here.
                     break;
 
                 case 2:
-                    Console.WriteLine("");
+                    Console.WriteLine("Will be added in the future.");
                     break;
 
                 case 3:
-                    Console.WriteLine("");
+                    Console.WriteLine("Will be added in the future.");
                     break;
 
                 case 4:
